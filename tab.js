@@ -32,7 +32,7 @@ function longestWord(words){
 function nbOccurences(wordList, word){
         let nb = 0;
     for( let i = 0; i<wordList.length; i++){
-        if(wordList.pop() == word){
+        if(wordList[i] == word){
             nb++;
         }
     }
