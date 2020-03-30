@@ -30,6 +30,7 @@ function longestWord(words){
     }
 }*/
 function nbOccurences(wordList, word){
+        let words = wordList.split(" ");
         let nb = 0;
     for( let i = 0; i<wordList.length; i++){
         if(wordList[i] == word){
