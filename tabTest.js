@@ -8,5 +8,11 @@ function tabTest(){
     console.log(nbOccurences(text, "foo")); // => 3
     console.log(nbOccurences(text, "quux")); // => 0
     console.log(nbOccurences(text, "baz")); // => 1
-
+    console.log( flatten2D([[1,2], [3,4], [5,6]])); // [1, 2, 3, 4, 5, 6]
+    console.log( flatten2D([[1,2], [3,4,5], [6]])); // [1, 2, 3, 4, 5, 6]
+    let noms = ["Bob", "Julien", "Roger"];
+    affichnoms(noms);
+    modifnoms(noms);
+    //multiplicate();
+    console.log(cesarencryption("ATTAQUEZ",3));
 }
