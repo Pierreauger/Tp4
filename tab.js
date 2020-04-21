@@ -13,6 +13,11 @@ function sum2(numbers){
     }
     return result;
 }
+
+/*function sum3(numbers){
+    let sumt = numbers.forEach
+    ()
+}*/
 function longestWord(words){
     let longest = "";
      for (word of words){
@@ -45,6 +50,15 @@ function flatten2D(array){
     return array2
 }
 
+function flatten2D2(values){
+    values.foreach(
+        function(value, i){
+            values2 = values.flat(i);
+        }
+    );
+    return value2
+}
+
 function affichnoms(noms){
     for( let nom of noms){
         console.log(nom);
@@ -68,11 +82,11 @@ function cesarencryption (mot,clef){
     let text = "";
     let ascii;
    for(let i = 0; i<mot.length;i++){
-        if(text[i] != " "){
+        if(mot[i] != " "){
         ascii = mot.charCodeAt(i);
         ascii = ascii+clef;
         ascii = ascii%26;
-        text += .toString(ascii);
+        text += toString(ascii);
         }
         else{
             text = text + " ";
@@ -80,3 +94,22 @@ function cesarencryption (mot,clef){
     }
     return text;
 }
+
+function abs(elems){
+let abs = elems.map(
+    function(elem){
+        return Math.abs(elem);
+    }
+);
+return abs;
+}
+function evenOnly(numbers){
+    let pair = numbers.filter(
+        function(number){
+            return number%2 == 0;
+        }
+    );
+    return pair;
+}
+//function removeDuplicates(values){
+//}
